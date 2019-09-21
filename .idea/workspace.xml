@@ -337,6 +337,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -616,6 +617,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.SolrUtil" />
+      <item itemvalue="JUnit.Demo01.test15" />
+      <item itemvalue="JUnit.Demo01.test14" />
+      <item itemvalue="JUnit.Demo01.test16" />
+      <item itemvalue="JUnit.Demo01.test144" />
       <item itemvalue="Maven.pinyougou-search-service" />
       <item itemvalue="Maven.pinyougou-search-web" />
       <item itemvalue="Maven.pinyougou-sellergoods-service" />
@@ -623,10 +628,6 @@
       <item itemvalue="Maven.pinyougou-manager-web" />
       <item itemvalue="Maven.pinyougou-content-service" />
       <item itemvalue="Maven.pinyougou-shop-web" />
-      <item itemvalue="JUnit.Demo01.test15" />
-      <item itemvalue="JUnit.Demo01.test14" />
-      <item itemvalue="JUnit.Demo01.test16" />
-      <item itemvalue="JUnit.Demo01.test144" />
     </list>
     <recent_temporary>
       <list>
