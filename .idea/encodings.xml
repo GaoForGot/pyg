@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SpringSecurityDemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-content-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-portal-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-search-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-shop-web" charset="UTF-8" />
+  </component>
+</project>

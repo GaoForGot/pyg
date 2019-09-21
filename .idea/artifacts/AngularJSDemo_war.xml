@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AngularJSDemo:war">
+    <output-path>$PROJECT_DIR$/AngularJSDemo/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>AngularJSDemo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="AngularJSDemo-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="AngularJSDemo:war exploded" />
+    </root>
+  </artifact>
+</component>

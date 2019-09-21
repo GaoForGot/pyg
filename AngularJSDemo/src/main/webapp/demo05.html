@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.min.js"></script>
+    <script>
+
+        //模块
+        var app = angular.module("myApp", []);
+        //控制器(类)
+        app.controller("controller1", function ($scope) {
+            //控制器方法(方法)
+            $scope.combine = function () {
+                return parseInt($scope.x) + parseInt($scope.y);
+            }
+        });
+
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="controller1">
+姓名1<input ng-model="x"/><br/>
+姓名2<input ng-model="y"/><br/>
+{{combine()}}
+
+</body>
+</html>

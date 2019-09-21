@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/_132" />
+    <file type="web" url="file://$PROJECT_DIR$/AngularJSDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/Controller" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-portal-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-search-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-sellergoods-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/Service" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringDataSolrDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringSecurityDemo" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Controller/pom.xml" />
+        <option value="$PROJECT_DIR$/AngularJSDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/pinyougouparent/pom.xml" />
+        <option value="$PROJECT_DIR$/nixianggongcheng/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurityDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/FastDFSDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDataRedisDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDataSolrDemo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

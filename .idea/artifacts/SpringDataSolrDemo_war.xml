@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringDataSolrDemo:war">
+    <output-path>$PROJECT_DIR$/SpringDataSolrDemo/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SpringDataSolrDemo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SpringDataSolrDemo-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="SpringDataSolrDemo:war exploded" />
+    </root>
+  </artifact>
+</component>
