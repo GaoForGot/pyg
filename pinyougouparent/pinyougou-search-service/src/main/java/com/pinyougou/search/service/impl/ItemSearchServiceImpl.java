@@ -98,6 +98,23 @@ public class ItemSearchServiceImpl implements ItemSearchService {
 
         }
 
+        //过滤价格
+        if (!"".equals(searchMap.get("price"))) {
+            Criteria priceCriteria = new Criteria("item_price");
+            String price = (String) searchMap.get("price");
+            String[] split = price.split("-");
+            //从0开始则开左区间
+            if (!"0".equals(split[0])) {
+                priceCriteria.greaterThanEqual(split[0]);
+            }
+            //不限制大小则开右区间
+            if (!"*".equals(split[1])) {
+                priceCriteria.lessThanEqual(split[1]);
+            }
+            FilterQuery priceFilter = new SimpleFilterQuery(priceCriteria);
+            query.addFilterQuery(priceFilter);
+        }
+
         //查询高亮对象页
         HighlightPage<TbItem> page = solrTemplate.queryForHighlightPage(query, TbItem.class);
         //高亮入口集合--->每条记录的内容--->一次查询会有多条记录

@@ -1,7 +1,7 @@
 app.controller("searchController", function ($scope, searchService) {
 
     //初始化搜索条件集合searchMap
-    $scope.searchMap = {"keywords": "", "category": "", "brand": "", "spec": {}};
+    $scope.searchMap = {"keywords": "", "category": "", "brand": "", "spec": {},"price":""};
 
     $scope.searchKeywords = function () {
         searchService.searchKeywords($scope.searchMap).success(
@@ -13,7 +13,7 @@ app.controller("searchController", function ($scope, searchService) {
 
     //添加搜索条件
     $scope.addSearchCondition = function (key,value) {
-        if (key == "category" || key == "brand") {
+        if (key == "category" || key == "brand" || key == "price") {
             $scope.searchMap[key] = value;
         } else {
             $scope.searchMap.spec[key] = value;
@@ -23,7 +23,7 @@ app.controller("searchController", function ($scope, searchService) {
 
     //删除搜索条件
     $scope.removeSearchCondition = function (key) {
-        if (key == "category" || key == "brand") {
+        if (key == "category" || key == "brand" || key == "price") {
             $scope.searchMap[key] = "";
         } else {
             delete $scope.searchMap.spec[key];
