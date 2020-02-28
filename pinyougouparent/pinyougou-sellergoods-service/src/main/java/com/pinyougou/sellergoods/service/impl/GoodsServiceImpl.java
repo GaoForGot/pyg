@@ -18,7 +18,7 @@ import com.pinyougou.pojo.TbGoodsExample.Criteria;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * 服务实现层
+ * SPU管理服务实现层
  *
  * @author Administrator
  */
@@ -254,6 +254,11 @@ public class GoodsServiceImpl implements GoodsService {
         return new PageResult(page.getTotal(), page.getResult());
     }
 
+    /**
+     * 更新SPU的审核状态-->更改属于该SPU的所有SKU的status
+     * @param ids
+     * @param status
+     */
     @Override
     public void updateStatus(Long[] ids, String status) {
         for (Long id : ids) {

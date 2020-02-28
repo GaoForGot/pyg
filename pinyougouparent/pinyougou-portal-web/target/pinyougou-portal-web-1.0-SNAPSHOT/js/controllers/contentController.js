@@ -7,4 +7,8 @@ app.controller("contentController", function ($scope, contentService) {
             }
         )
     }
+
+    $scope.searchKeyword = function () {
+        location.href = "http://localhost:9104#?keyword=" + $scope.keyword;
+    };
 })

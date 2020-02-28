@@ -57,5 +57,12 @@ public interface ItemService {
 	 * @return
 	 */
 	public PageResult findPage(TbItem item, int pageNum, int pageSize);
+
+	/**
+	 * 提供一个服务, 根据SPU查询并返回SKU列表
+	 * @param SPUIds
+	 * @return
+	 */
+	public List<TbItem> findItemsBySpuAndStatus(Long[] SPUIds);
 	
 }

@@ -73,8 +73,8 @@
                             <form action="" class="sui-form form-inline">
                                 <!--searchAutoComplete-->
                                 <div class="input-append">
-                                    <input type="text" id="autocomplete" type="text" class="input-error input-xxlarge"/>
-                                    <button class="sui-btn btn-xlarge btn-danger" type="button">搜索</button>
+                                    <input type="text" id="autocomplete" type="text" class="input-error input-xxlarge" ng-model="keyword"/>
+                                    <button class="sui-btn btn-xlarge btn-danger" type="button" ng-click="searchKeyword()">搜索</button>
                                 </div>
                             </form>
                         </div>
@@ -671,10 +671,12 @@
                 <!--banner轮播-->
                 <div id="myCarousel" data-ride="carousel" data-interval="4000" class="sui-carousel slide">
                     <ol class="carousel-indicators">
+                        <!--下面的几个点-->
                         <li ng-repeat="content in contentList[1]" data-target="#myCarousel" data-slide-to="{{$index}}"
                             class="{{$index==0?'active':''}}"></li>
                     </ol>
                     <div class="carousel-inner">
+                        <!--图片-->
                         <div class="{{$index==0?'active':''}} item" ng-repeat="content in contentList[1]">
                             <a href="{{content.url}}">
                                 <img src="{{content.pic}}"/>

@@ -7,45 +7,53 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pinyougoucontentservice" />
-        <module name="pinyougousearchweb" />
         <module name="AngularJSDemo" />
-        <module name="pinyougoushopweb" />
+        <module name="JmsTest" />
+        <module name="pinyougou-page-web" />
         <module name="pinyougoumanagerweb" />
         <module name="pinyougousellergoodsinterface" />
         <module name="pinyougousearchinterface" />
+        <module name="pinyougoucommon" />
+        <module name="pinyougou-page-service" />
         <module name="Service" />
         <module name="SpringDataSolrDemo" />
-        <module name="pinyougoucontentinterface" />
         <module name="nixianggongcheng" />
+        <module name="pinyougoucontentinterface" />
+        <module name="pinyougousearchweb" />
         <module name="FastDFSDemo" />
+        <module name="pinyougou-page-interface" />
+        <module name="SpringJMSConsumer" />
         <module name="pingyougou-pojo" />
         <module name="pinyougouportalweb" />
-        <module name="SpringDataRedisDemo" />
+        <module name="pinyougoushopweb" />
+        <module name="FreeMarkerDemo" />
+        <module name="SpringJMSProducer" />
         <module name="pinyougoudao" />
         <module name="pinyougousellergoodsservice" />
-        <module name="pinyougoucommon" />
+        <module name="Controller" />
         <module name="SpringSecurityDemo" />
         <module name="pinyougousolrutil" />
-        <module name="Controller" />
+        <module name="SpringDataRedisDemo" />
         <module name="pinyougousearchservice" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="_123" target="1.5" />
-      <module name="_132" target="1.5" />
+    <bytecodeTargetLevel target="8">
       <module name="AngularJSDemo" target="1.5" />
       <module name="Controller" target="1.8" />
       <module name="FastDFSDemo" target="1.5" />
+      <module name="FreeMarkerDemo" target="1.5" />
+      <module name="JmsTest" target="1.5" />
       <module name="nixianggongcheng" target="1.5" />
       <module name="pingyougou-pojo" target="1.7" />
-      <module name="pingyougoupojo" target="1.7" />
+      <module name="pinyougou-page-interface" target="1.7" />
+      <module name="pinyougou-page-service" target="1.7" />
+      <module name="pinyougou-page-web" target="1.7" />
       <module name="pinyougoucommon" target="1.7" />
       <module name="pinyougoucontentinterface" target="1.7" />
       <module name="pinyougoucontentservice" target="1.7" />
       <module name="pinyougoudao" target="1.7" />
       <module name="pinyougoumanagerweb" target="1.7" />
       <module name="pinyougouparent" target="1.7" />
-      <module name="pinyougoupojo" target="1.7" />
       <module name="pinyougouportalweb" target="1.7" />
       <module name="pinyougousearchinterface" target="1.7" />
       <module name="pinyougousearchservice" target="1.7" />
@@ -57,6 +65,8 @@
       <module name="Service" target="1.8" />
       <module name="SpringDataRedisDemo" target="1.7" />
       <module name="SpringDataSolrDemo" target="1.5" />
+      <module name="SpringJMSConsumer" target="1.5" />
+      <module name="SpringJMSProducer" target="1.5" />
       <module name="SpringSecurityDemo" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -1,0 +1,15 @@
+127.0.0.1 - - [26/Feb/2020:15:27:14 +0800] "GET /goods/genHtml.do?goodsId=149187842867960 HTTP/1.1" 302 - http-bio-9101-exec-1 124
+127.0.0.1 - - [26/Feb/2020:15:27:14 +0800] "GET /css/webbase.css HTTP/1.1" 200 16384 http-bio-9101-exec-2 14
+127.0.0.1 - - [26/Feb/2020:15:27:15 +0800] "POST /login HTTP/1.1" 302 - http-bio-9101-exec-4 15
+127.0.0.1 - - [26/Feb/2020:15:27:15 +0800] "GET /admin/index.html HTTP/1.1" 200 21969 http-bio-9101-exec-5 10
+127.0.0.1 - - [26/Feb/2020:15:27:15 +0800] "GET /plugins/jQueryUI/jquery-ui.min.js HTTP/1.1" 404 1017 http-bio-9101-exec-6 13
+127.0.0.1 - - [26/Feb/2020:15:27:15 +0800] "GET /admin/home.html HTTP/1.1" 200 4468 http-bio-9101-exec-7 6
+127.0.0.1 - - [26/Feb/2020:15:27:16 +0800] "GET /login/findUserName.do HTTP/1.1" 200 21 http-bio-9101-exec-8 112
+127.0.0.1 - - [26/Feb/2020:15:27:18 +0800] "GET /admin/goods.html HTTP/1.1" 200 4557 http-bio-9101-exec-9 9
+127.0.0.1 - - [26/Feb/2020:15:27:18 +0800] "POST /goods/search.do?page=1&rows=10 HTTP/1.1" 200 694 http-bio-9101-exec-10 500
+127.0.0.1 - - [26/Feb/2020:15:27:18 +0800] "GET /itemCat/findAll.do HTTP/1.1" 200 70247 http-bio-9101-exec-9 530
+127.0.0.1 - - [26/Feb/2020:15:27:18 +0800] "POST /goods/search.do?page=1&rows=10 HTTP/1.1" 200 694 http-bio-9101-exec-9 24
+127.0.0.1 - - [26/Feb/2020:15:27:30 +0800] "GET /goods/updateStatus.do?ids=149187842867994,149187842867960&status=1 HTTP/1.1" 200 41 http-bio-9101-exec-9 5000
+127.0.0.1 - - [26/Feb/2020:15:27:30 +0800] "POST /goods/search.do?page=1&rows=10 HTTP/1.1" 200 21 http-bio-9101-exec-9 20
+127.0.0.1 - - [26/Feb/2020:15:27:30 +0800] "POST /goods/search.do?page=1&rows=10 HTTP/1.1" 200 21 http-bio-9101-exec-9 19
+127.0.0.1 - - [26/Feb/2020:15:27:31 +0800] "GET /goods/updateStatus.do?ids=&status=1 HTTP/1.1" 200 42 http-bio-9101-exec-9 222

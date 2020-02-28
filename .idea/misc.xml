@@ -4,8 +4,12 @@
     <file type="web" url="file://$PROJECT_DIR$/_132" />
     <file type="web" url="file://$PROJECT_DIR$/AngularJSDemo" />
     <file type="web" url="file://$PROJECT_DIR$/Controller" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougou-page-interface" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-page-interface" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-page-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-page-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-search-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-search-web" />
@@ -27,7 +31,16 @@
         <option value="$PROJECT_DIR$/FastDFSDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDataRedisDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringDataSolrDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/FreeMarkerDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/JmsTest/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJMSProducer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJMSConsumer/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/pinyougou-page-interface/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">

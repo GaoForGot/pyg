@@ -31,6 +31,7 @@ public class SolrUtil {
         List<TbItem> items = mapper.selectByExample(example);
         for (TbItem item : items) {
             Map map = JSON.parseObject(item.getSpec(), Map.class);
+            //给动态域赋值
             item.setSpecMap(map);
         }
         solrTemplate.saveBeans(items);
