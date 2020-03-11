@@ -19,10 +19,12 @@
         <module name="pinyougou-page-service" />
         <module name="pinyougousearchinterface" />
         <module name="pinyougou-cart-web" />
+        <module name="pinyougou-seckill-service" />
         <module name="SpringJMSProducer" />
         <module name="pinyougousolrutil" />
         <module name="SpringSecurityDemo" />
         <module name="pinyougousearchweb" />
+        <module name="pinyougou-seckill-interface" />
         <module name="pinyougou-user-web" />
         <module name="pinyougou-order-interface" />
         <module name="pinyougousearchservice" />
@@ -44,6 +46,7 @@
         <module name="pinyougoucontentservice" />
         <module name="pinyougou-user-service" />
         <module name="pinyougou-pojo" />
+        <module name="pinyougou-seckill-web" />
         <module name="pinyougousellergoodsservice" />
         <module name="pinyougoucommon" />
         <module name="FastDFSDemo" />
@@ -74,6 +77,9 @@
       <module name="pinyougou-pay-interface" target="1.7" />
       <module name="pinyougou-pay-service" target="1.7" />
       <module name="pinyougou-pojo" target="1.7" />
+      <module name="pinyougou-seckill-interface" target="1.7" />
+      <module name="pinyougou-seckill-service" target="1.7" />
+      <module name="pinyougou-seckill-web" target="1.7" />
       <module name="pinyougou-user-interface" target="1.7" />
       <module name="pinyougou-user-service" target="1.7" />
       <module name="pinyougou-user-web" target="1.7" />

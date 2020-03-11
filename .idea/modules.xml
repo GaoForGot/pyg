@@ -29,6 +29,9 @@
       <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-pay-interface/pinyougou-pay-interface.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-pay-interface/pinyougou-pay-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-pay-service/pinyougou-pay-service.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-pay-service/pinyougou-pay-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-pojo/pinyougou-pojo.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-pojo/pinyougou-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-seckill-interface/pinyougou-seckill-interface.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-seckill-interface/pinyougou-seckill-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-seckill-service/pinyougou-seckill-service.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-seckill-service/pinyougou-seckill-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-seckill-web/pinyougou-seckill-web.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-seckill-web/pinyougou-seckill-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-user-interface/pinyougou-user-interface.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-user-interface/pinyougou-user-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-user-service/pinyougou-user-service.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-user-service/pinyougou-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinyougouparent/pinyougou-user-web/pinyougou-user-web.iml" filepath="$PROJECT_DIR$/pinyougouparent/pinyougou-user-web/pinyougou-user-web.iml" />

@@ -20,6 +20,8 @@
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-search-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-search-web" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-seckill-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-seckill-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-shop-web" />
     <file type="web" url="file://$PROJECT_DIR$/pinyougouparent/pinyougou-user-service" />
