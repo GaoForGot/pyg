@@ -5,19 +5,26 @@
              xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
+    <!--放行资源-->
     <http pattern="/login.html" security="none"/>
     <http pattern="/login_error.html" security="none"/>
 
+    <!--不使用表达式-->
     <http use-expressions="false">
+        <!--角色访问权限, /**表示所有文件夹和所有文件夹中的子目录, /*表示所有文件夹, 但不包括子目录-->
         <intercept-url pattern="/**" access="ROLE_USER"/>
+        <!--登录页面, 默认登录成功和失败的跳转页面-->
         <form-login login-page="/login.html" default-target-url="/index.html"
                     authentication-failure-url="/login_error.html"/>
+        <!--禁止跨域-->
         <csrf disabled="true"/>
     </http>
 
+    <!--用户管理-->
     <authentication-manager>
         <authentication-provider>
             <user-service>
+                <!--用户名, 密码, 权限-->
                 <user name="admin" password="123" authorities="ROLE_USER"/>
             </user-service>
         </authentication-provider>

@@ -3,7 +3,6 @@ import java.util.List;
 
 import com.alibaba.fastjson.JSON;
 import com.pinyougou.grouppojo.Goods;
-import com.pinyougou.page.service.ItemPageService;
 import com.pinyougou.pojo.TbItem;
 import com.pinyougou.sellergoods.service.GoodsService;
 import com.pinyougou.sellergoods.service.ItemService;
@@ -37,6 +36,9 @@ public class GoodsController {
 	@Reference
 	private ItemService itemService;
 
+	/*@Reference(timeout = 30000)
+	private ItemPageService itemPageService;*/
+
 	//activeMQ消息队列对象-添加索引库队列
 	@Autowired
 	private Destination queueSolrInsertItemsDestination;
@@ -45,6 +47,15 @@ public class GoodsController {
 	@Autowired
 	private Destination queueSolrDeleteItemsDestination;
 
+	//activeMQ消息队列对象-生成freemarker静态页面订阅
+	@Autowired
+	private Destination topicItemPageDestination;
+
+	//activeMQ消息队列对象-删除freemarker静态页面订阅
+	@Autowired
+	private Destination topicItemPageDelDestination;
+
+	//activeMQ模板对象, 用于发送消息
 	@Autowired
 	private JmsTemplate jmsTemplate;
 	
@@ -104,8 +115,15 @@ public class GoodsController {
 		try {
 			goodsService.delete(ids);
 			//itemSearchService.deleteItems(ids);
-			//发送批量删除消息到activeMQ的批量删除队列
+			//发送批量删除消息到activeMQ的solr批量删除队列
 			jmsTemplate.send(queueSolrDeleteItemsDestination, new MessageCreator() {
+				@Override
+				public javax.jms.Message createMessage(Session session) throws JMSException {
+					return session.createObjectMessage(ids);
+				}
+			});
+			//发送批量删除消息到activeMQ的page批量删除订阅
+			jmsTemplate.send(topicItemPageDelDestination, new MessageCreator() {
 				@Override
 				public javax.jms.Message createMessage(Session session) throws JMSException {
 					return session.createObjectMessage(ids);
@@ -142,7 +160,7 @@ public class GoodsController {
 	public Message updateStatus(Long[] ids, String status) {
 		try {
 			goodsService.updateStatus(ids, status);
-			//同步更新solr服务器, 如果将status改为1, 就上传, 如果status为其他, 就删除
+			//同步更新solr服务器, 如果将status改为1, 就上传添加, 如果status为其他, 就删除
 			if ("1".equals(status)) {
 				final List<TbItem> itemList = itemService.findItemsBySpuAndStatus(ids);
 				//itemSearchService.importItems(itemList);
@@ -156,8 +174,16 @@ public class GoodsController {
 					}
 				});
 				//生成静态页面
-				for (Long goodsId : ids) {
-					itemPageService.genItemHtml(goodsId);
+				for (final Long goodsId : ids) {
+					//itemPageService.genItemHtml(goodsId);
+					//发布activeMQ订阅消息
+					jmsTemplate.send(topicItemPageDestination, new MessageCreator() {
+						@Override
+						public javax.jms.Message createMessage(Session session) throws JMSException {
+							return session.createObjectMessage(goodsId);
+						}
+					});
+
 				}
 			}
 			return new Message(true, "审核成功");
@@ -167,8 +193,7 @@ public class GoodsController {
 		}
 	}
 
-	@Reference(timeout = 30000)
-	private ItemPageService itemPageService;
+
 
 	
 }

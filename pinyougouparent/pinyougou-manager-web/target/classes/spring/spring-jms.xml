@@ -20,18 +20,26 @@
         <!-- 这个connectionFactory对应的是我们定义的Spring提供的那个ConnectionFactory对象 -->
         <property name="connectionFactory" ref="connectionFactory"/>
     </bean>
+
     <!--这个是队列目的地，点对点的  文本信息-->
+    <!--添加solr索引库队列-->
     <bean id="queueSolrInsertItemsDestination" class="org.apache.activemq.command.ActiveMQQueue">
         <constructor-arg value="pinyougou_solr_insertitems_queue"/>
     </bean>
 
-    <!--批量删除队列-->
+    <!--批量删除solr索引库队列-->
     <bean id="queueSolrDeleteItemsDestination" class="org.apache.activemq.command.ActiveMQQueue">
         <constructor-arg value="pinyougou_solr_deleteitems_queue"/>
     </bean>
 
-    <!--这个是订阅模式 文本信息
-    <bean id="topicTextDestination" class="org.apache.activemq.command.ActiveMQTopic">
-        <constructor-arg value="topic_text"/>
-    </bean>-->
+    <!--这个是订阅模式 文本信息-->
+    <!--生成spu静态页面订阅生产者-->
+    <bean id="topicItemPageDestination" class="org.apache.activemq.command.ActiveMQTopic">
+        <constructor-arg value="pinyougou_freemarker_genhtml_topic"/>
+    </bean>
+
+    <!--删除spu静态页面订阅生产者-->
+    <bean id="topicItemPageDelDestination" class="org.apache.activemq.command.ActiveMQTopic">
+    <constructor-arg value="pinyougou_freemarker_delhtml_topic"/>
+    </bean>
 </beans>

@@ -6,4 +6,4 @@ app.controller("indexController", function ($scope, indexService) {
             }
         );
     }
-})
+});

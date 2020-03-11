@@ -6,48 +6,77 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pinyougoucontentservice" />
+        <module name="CasClientDemo03" />
+        <module name="CasClientDemo02" />
+        <module name="CasClientDemo01" />
+        <module name="pinyougoushopweb" />
         <module name="AngularJSDemo" />
+        <module name="pinyougoumanagerweb" />
+        <module name="pinyougou-order-service" />
+        <module name="SpringJMSConsumer" />
+        <module name="SpringDataRedisDemo" />
+        <module name="sms-service" />
+        <module name="pinyougou-page-service" />
+        <module name="pinyougousearchinterface" />
+        <module name="pinyougou-cart-web" />
+        <module name="SpringJMSProducer" />
+        <module name="pinyougousolrutil" />
+        <module name="SpringSecurityDemo" />
+        <module name="pinyougousearchweb" />
+        <module name="pinyougou-user-web" />
+        <module name="pinyougou-order-interface" />
+        <module name="pinyougousearchservice" />
+        <module name="pinyougou-cart-service" />
+        <module name="pinyougou-user-interface" />
+        <module name="pinyougou-pay-service" />
+        <module name="pinyougou-pay-interface" />
+        <module name="pinyougoucontentinterface" />
+        <module name="SpringDataSolrDemo" />
+        <module name="pinyougou-cart-interface" />
+        <module name="FreeMarkerDemo" />
+        <module name="Service" />
+        <module name="SpringBootDemo" />
+        <module name="pinyougoudao" />
+        <module name="pinyougouportalweb" />
+        <module name="pinyougousellergoodsinterface" />
+        <module name="pinyougou-page-interface" />
+        <module name="nixianggongcheng" />
+        <module name="pinyougoucontentservice" />
+        <module name="pinyougou-user-service" />
+        <module name="pinyougou-pojo" />
+        <module name="pinyougousellergoodsservice" />
+        <module name="pinyougoucommon" />
+        <module name="FastDFSDemo" />
         <module name="JmsTest" />
         <module name="pinyougou-page-web" />
-        <module name="pinyougoumanagerweb" />
-        <module name="pinyougousellergoodsinterface" />
-        <module name="pinyougousearchinterface" />
-        <module name="pinyougoucommon" />
-        <module name="pinyougou-page-service" />
-        <module name="Service" />
-        <module name="SpringDataSolrDemo" />
-        <module name="nixianggongcheng" />
-        <module name="pinyougoucontentinterface" />
-        <module name="pinyougousearchweb" />
-        <module name="FastDFSDemo" />
-        <module name="pinyougou-page-interface" />
-        <module name="SpringJMSConsumer" />
-        <module name="pingyougou-pojo" />
-        <module name="pinyougouportalweb" />
-        <module name="pinyougoushopweb" />
-        <module name="FreeMarkerDemo" />
-        <module name="SpringJMSProducer" />
-        <module name="pinyougoudao" />
-        <module name="pinyougousellergoodsservice" />
         <module name="Controller" />
-        <module name="SpringSecurityDemo" />
-        <module name="pinyougousolrutil" />
-        <module name="SpringDataRedisDemo" />
-        <module name="pinyougousearchservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="AngularJSDemo" target="1.5" />
+      <module name="CasClientDemo01" target="1.7" />
+      <module name="CasClientDemo02" target="1.7" />
+      <module name="CasClientDemo03" target="1.7" />
       <module name="Controller" target="1.8" />
       <module name="FastDFSDemo" target="1.5" />
       <module name="FreeMarkerDemo" target="1.5" />
       <module name="JmsTest" target="1.5" />
       <module name="nixianggongcheng" target="1.5" />
-      <module name="pingyougou-pojo" target="1.7" />
+      <module name="pingyougou-cart-interface" target="1.7" />
+      <module name="pinyougou-cart-interface" target="1.7" />
+      <module name="pinyougou-cart-service" target="1.7" />
+      <module name="pinyougou-cart-web" target="1.7" />
+      <module name="pinyougou-order-interface" target="1.7" />
+      <module name="pinyougou-order-service" target="1.7" />
       <module name="pinyougou-page-interface" target="1.7" />
       <module name="pinyougou-page-service" target="1.7" />
       <module name="pinyougou-page-web" target="1.7" />
+      <module name="pinyougou-pay-interface" target="1.7" />
+      <module name="pinyougou-pay-service" target="1.7" />
+      <module name="pinyougou-pojo" target="1.7" />
+      <module name="pinyougou-user-interface" target="1.7" />
+      <module name="pinyougou-user-service" target="1.7" />
+      <module name="pinyougou-user-web" target="1.7" />
       <module name="pinyougoucommon" target="1.7" />
       <module name="pinyougoucontentinterface" target="1.7" />
       <module name="pinyougoucontentservice" target="1.7" />
@@ -63,6 +92,8 @@
       <module name="pinyougoushopweb" target="1.7" />
       <module name="pinyougousolrutil" target="1.7" />
       <module name="Service" target="1.8" />
+      <module name="sms-service" target="1.7" />
+      <module name="SpringBootDemo" target="1.7" />
       <module name="SpringDataRedisDemo" target="1.7" />
       <module name="SpringDataSolrDemo" target="1.5" />
       <module name="SpringJMSConsumer" target="1.5" />

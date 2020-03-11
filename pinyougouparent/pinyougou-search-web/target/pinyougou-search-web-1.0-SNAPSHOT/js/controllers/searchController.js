@@ -138,5 +138,4 @@ app.controller("searchController", function ($scope, $location,searchService) {
         return false;
     };
 
-
 });

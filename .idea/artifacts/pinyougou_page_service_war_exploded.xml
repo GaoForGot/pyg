@@ -54,7 +54,7 @@
             <element id="module-output" name="pinyougoudao" />
           </element>
           <element id="archive" name="pinyougou-pojo-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="pingyougou-pojo" />
+            <element id="module-output" name="pinyougou-pojo" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-solr:1.5.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.11.5.RELEASE" />
@@ -81,6 +81,10 @@
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.9" />
           <element id="library" level="project" name="Maven: org.mybatis.generator:mybatis-generator-core:1.3.5" />
           <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.23" />
+          <element id="library" level="project" name="Maven: org.apache.activemq:activemq-client:5.13.4" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" />
+          <element id="library" level="project" name="Maven: org.fusesource.hawtbuf:hawtbuf:1.11" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:1.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
