@@ -11,7 +11,7 @@ import com.aliyuncs.profile.DefaultProfile;
 
 public class SmsService {
     public static void main(String[] args) {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4Fp27Kqa7sMGUvkKHBcL", "jHI6lv26zJNaqKWki9Qj7uz2aGXBpg");
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "", "");
         IAcsClient client = new DefaultAcsClient(profile);
         CommonRequest request = new CommonRequest();
         request.setMethod(MethodType.POST);
